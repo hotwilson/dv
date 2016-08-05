@@ -1,4 +1,4 @@
-# Testting
+# Testing whether Hook is working or not.
 FROM node:0.10.44-slim
 
 ADD . /home/demo/dv/
