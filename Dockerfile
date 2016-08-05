@@ -1,6 +1,6 @@
 # Testing whether Hook is working or not.
 # Double Check if Build is updating or not.
-# Checking SCM Message.
+# Checking Display of SCM Message.
 FROM node:0.10.44-slim
 
 ADD . /home/demo/dv/
