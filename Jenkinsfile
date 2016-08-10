@@ -1,10 +1,14 @@
 node {
-   
-   stage '\u2776 Collect Stage 1'
-   echo '\u2776 Comitted \u2713.'
+   checkout scm
 
-   stage '\u2601 Deploy 5'
-   echo '\u2601 Not deployed \u2639.'
-   echo '\u2601 Deployed \u263A.'
-   
+  
+/*
+   stage 'collect' 
+   sh 'git rev-parse HEAD > GIT_COMMIT'
+   def shortCommit = readFile('GIT_COMMIT').take(6)
+   def image = docker.build(jenkinsciinfra/bind.build-${shortCommit})")
+ 
+   stage 'Deploy'
+   image.push()
+*/
 }
