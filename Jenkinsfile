@@ -7,5 +7,4 @@ node {
    echo '\u2601 Not deployed \u2639.'
    echo '\u2601 Deployed \u263A.'
    
-   
 }
