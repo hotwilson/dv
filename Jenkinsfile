@@ -1,6 +1,6 @@
 node {
    checkout scm
-   def worspace = "hello"
+   def workspace = "hello"
    echo "worspace=${worspace}"
 
 //   def workspace = manager.build.getEnvVars()["WORKSPACE"]
