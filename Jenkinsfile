@@ -8,7 +8,7 @@ node {
    
    stage 'error'
    //def version = "${env.BUILD_ID}"
-   echo 'BUILD_ID=${env.BUILD_ID}'
+   echo "BUILD_ID=${env.BUILD_ID}"
    // def myVar = build.getEnvironment(listener).get('BUILD_ID')
 
    stage 'getRemote'
