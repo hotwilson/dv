@@ -20,6 +20,9 @@ node {
    echo "JENKINS_URL=${env.JENKINS_URL}"
    echo "JAVA_HOME=${env.JAVA_HOME}"
 
+   echo "JENKINS=${env.JENKINS}"
+   echo "USER=${env.USER}"
+   echo "TERM=${env.TERM}"
 
 
 /*
