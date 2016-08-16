@@ -2,9 +2,6 @@
 
 node {
    checkout scm
-
-   def workspace = pwd()
-   echo "workspace=${workspace}"
    
    stage 'env'
    echo "BUILD_CAUSE=${env.BUILD_CAUSE}"
@@ -26,6 +23,10 @@ node {
    echo "USER=${env.USER}"
    echo "TERM=${env.TERM}"
 
+   echo "WORKSPACE=${env.WORKSPACE}"
+
+   def workspace = pwd()
+   echo "workspace=${workspace}"
 
 /*
    stage 'getRemote'
