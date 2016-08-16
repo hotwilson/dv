@@ -4,8 +4,12 @@ node {
    checkout scm
    def workspace = "hello"
    echo "workspace=${workspace}"
+   
+   stage 'getRemote'
    def workspace = manager.build.workspace.getRemote()
-//   def workspace = manager.build.getEnvVars()["WORKSPACE"]
+   
+   stage 'error'
+   def workspace = manager.build.getEnvVars()["WORKSPACE"]
 
 
 /*
