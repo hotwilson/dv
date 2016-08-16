@@ -6,7 +6,7 @@ node {
    echo "workspace=${workspace}"
    
    stage 'error'
-   def workspace2 = manager.build.getEnvVars()["WORKSPACE"]
+   def workspace2 = build.getEnvVars()["WORKSPACE"]
 
    
    stage 'getRemote'
