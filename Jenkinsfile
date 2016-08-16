@@ -7,14 +7,7 @@ node {
    echo "workspace=${workspace}"
    
    stage 'error'
-   def workspace2 = build.getEnvVars()["WORKSPACE"]
-        withEnv(["WORKSPACE=${workspace}",
-                 "MAKEOBJDIRPREFIX=${makeobjdirprefix}",
-                 "BUILD_ROOT=" + pwd(),
-                 "MAKE_CONF_FILE=${make_conf_file}",
-                 "CONFIG_JSON=" + TEST_CONFIG_FILE ]) {
-     echo 'hi'
-   }
+   def myVar = build.getEnvironment(listener).get('BUILD_ID')
 
    stage 'getRemote'
    def workspace1 = manager.build.workspace.getRemote()
