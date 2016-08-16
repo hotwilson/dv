@@ -7,7 +7,8 @@ node {
    echo "workspace=${workspace}"
    
    stage 'error'
-   def myVar = build.getEnvironment(listener).get('BUILD_ID')
+   def version = readFile "${env.BUILD_ID}"
+   // def myVar = build.getEnvironment(listener).get('BUILD_ID')
 
    stage 'getRemote'
    def workspace1 = manager.build.workspace.getRemote()
