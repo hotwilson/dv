@@ -2,7 +2,8 @@
 
 node {
    checkout scm
-   def workspace = "hello"
+
+   def workspace = pwd()
    echo "workspace=${workspace}"
    
    stage 'error'
