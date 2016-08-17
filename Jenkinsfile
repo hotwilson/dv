@@ -14,7 +14,7 @@ import groovy.json.JsonOutput
 import java.net.URL
 
 node {
-#   checkout scm
+//   checkout scm
    
    stage '\u2776 env'
    echo "BUILD_CAUSE=${env.BUILD_CAUSE}"
