@@ -48,13 +48,13 @@ try {
    echo "LANG=${env.LANG}"
    echo "LOGNAME=${env.LOGNAME}"
    echo "NODE_NAME =${env.NODE_NAME}"
+
+   stage '\u2777 remote'
    echo "GIT_COMMIT  =${env.GIT_COMMIT}"
    echo "GIT_URL =${env.GIT_URL}"
    echo "GIT_BRANCH =${env.GIT_BRANCH}"
    echo "CVS_BRANCH  =${env.CVS_BRANCH}"
    echo "SVN_REVISION =${env.SVN_REVISION}"
-
-   stage '\u2777 remote'
 
 /*
    stage 'getRemote'
