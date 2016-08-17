@@ -1,9 +1,22 @@
+#!/usr/bin/env groovy
 
+/**
+ * Sample Jenkinsfile for Jenkins2 Pipeline
+ * from https://github.com/hotwilson/jenkins2/edit/master/Jenkinsfile
+ * by Wilson Mar@gmail.com 
+ */
+ 
+import hudson.model.*
+import hudson.EnvVars
+import groovy.json.JsonSlurperClassic
+import groovy.json.JsonBuilder
+import groovy.json.JsonOutput
+import java.net.URL
 
 node {
-   checkout scm
+#   checkout scm
    
-   stage 'env'
+   stage '\u2776 env'
    echo "BUILD_CAUSE=${env.BUILD_CAUSE}"
    echo "BUILD_ID=${env.BUILD_ID}"
    echo "BUILD_NUMBER=${env.BUILD_NUMBER}"
@@ -35,6 +48,8 @@ node {
    echo "GIT_BRANCH =${env.GIT_BRANCH}"
    echo "CVS_BRANCH  =${env.CVS_BRANCH}"
    echo "SVN_REVISION =${env.SVN_REVISION}"
+
+   stage '\u2777 remote'
 
 /*
    stage 'getRemote'
