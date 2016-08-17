@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 /**
- * Sample Jenkinsfile for Jenkins2 Pipeline
+ * Jenkinsfile for Jenkins2 Pipeline
  * from https://github.com/hotwilson/jenkins2/edit/master/Jenkinsfile
  * by Wilson Mar@gmail.com 
  */
