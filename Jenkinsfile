@@ -73,7 +73,9 @@ try {
    image.push()
 */
 
-} // try
+  } // node end
+
+} // try end
 catch (exc) {
 /*
     err = caughtError
