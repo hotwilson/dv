@@ -4,20 +4,19 @@ node {
    checkout scm
    
    stage 'env'
-   echo "JENKINS_URL=${env.JENKINS_URL}"
-   echo "BUILD_URL=${env.BUILD_URL}"
-
    echo "BUILD_CAUSE=${env.BUILD_CAUSE}"
    echo "BUILD_ID=${env.BUILD_ID}"
    echo "BUILD_NUMBER=${env.BUILD_NUMBER}"
    echo "BUILD_TAG=${env.BUILD_TAG}"
+   echo "JENKINS_URL=${env.JENKINS_URL}"
+   echo "\u2600 BUILD_URL=${env.BUILD_URL}"
 
    echo "EXECUTOR_NUMBER=${env.EXECUTOR_NUMBER}"
    echo "HOME=${env.HOME}"
    echo "HUDSON_HOME=${env.HUDSON_HOME}"
    echo "WORKSPACE=${env.WORKSPACE}"
    def workspace = pwd()
-   echo "workspace=${workspace}"
+   echo "\u2600 workspace=${workspace}"
 
    echo "JOB_NAME=${env.JOB_NAME}"
    echo "JAVA_HOME=${env.JAVA_HOME}"
