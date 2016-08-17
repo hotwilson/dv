@@ -14,7 +14,7 @@ import groovy.json.JsonOutput
 import java.net.URL
 
 try {
-  node {
+  node ('docker') {
 //   checkout scm
    
    stage '\u2776 env'
