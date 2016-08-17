@@ -85,6 +85,7 @@ try {
     from: 'noreply@ci.jenkins.io'
 */
 } finally {
+ 
     (currentBuild.result != "ABORTED") && node("master") {
         // Send e-mail notifications for failed or unstable builds.
         // currentBuild.result must be non-null for this step to work.
