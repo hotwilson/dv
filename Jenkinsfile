@@ -17,6 +17,10 @@ node {
 //   checkout scm
    
    stage '\u2776 env'
+   /* Only keep the 10 most recent builds. */
+properties([[$class: 'BuildDiscarderProperty',
+                strategy: [$class: 'LogRotator', numToKeepStr: '10']]])
+
    echo "BUILD_CAUSE=${env.BUILD_CAUSE}"
    echo "BUILD_ID=${env.BUILD_ID}"
    echo "BUILD_NUMBER=${env.BUILD_NUMBER}"
