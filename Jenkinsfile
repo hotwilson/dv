@@ -89,7 +89,7 @@ catch (exc) {
     from: 'noreply@ci.jenkins.io'
 */
 } finally {
- 
+   /*
     (currentBuild.result != "ABORTED") && node("master") {
         // Send e-mail notifications for failed or unstable builds.
         // currentBuild.result must be non-null for this step to work.
@@ -98,7 +98,8 @@ catch (exc) {
            recipients: "${email_to}",
            sendToIndividuals: true])
     }
-
+   */
+   
     /* Must re-throw exception to propagate error */
     if (err) {
         throw err
